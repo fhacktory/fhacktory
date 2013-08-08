@@ -1,0 +1,67 @@
+@import compass/utilities/text/replacement
+@import compass/typography
+
+$base-font-size: 16px
+$base-line-height: 24px
++establish-baseline
+
+.home.index
+
+  .container
+    position: relative
+    background: #000
+    overflow: hidden
+
+    color: #eee
+
+    .background
+      position: fixed
+      left: 50%
+      top: -250px
+      width: 1800px
+      margin-left: -900px
+
+    header
+      +padding-leader(7)
+      +padding-trailer(1)
+      text-align: center
+      position: relative
+      z-index: 0
+
+      .fhacktory_main_title
+        position: relative
+        display: inline-block
+
+        a, a:active, a:link, a:hover, a:visited
+          text-decoration: none
+          color: inherit
+
+        h1
+          width:  image-width('fhacktory.png')
+          margin: 0 auto
+          +replace-text('fhacktory.png')
+          +adjust-leading-to(3)
+
+        .gear
+          position: absolute
+          left: 75px
+          top: -180px + (image-height('fhacktory.png') / 2)
+          z-index: -1
+
+          width: 360px
+          height: 360px
+
+        h2
+          +adjust-font-size-to(64px)
+          +padding-leader(3,64px)
+          +padding-trailer(2,64px)
+
+        .event
+          +adjust-font-size-to(32px)
+
+    .content
+      position: relative
+      z-index: 10
+      height: 2000px
+      background: #111
+      padding: 1em
