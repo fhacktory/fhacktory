@@ -5,13 +5,14 @@
 $ =>
 
   # Parse & Init stellar parallax scrolling
-  $.stellar()
+  $.stellar
+    responsive: true
 
   # Start rotating gear
   $('.gear','.home.index').css('transform', 'rotate(0rad)')
   rotate = ->
     $('.gear','.home.index').animate
-      transform: "+=rotate(0.05rad)"
+      transform: "+=rotate(0.10rad)"
     , 1000
     , 'linear'
     , -> rotate()
