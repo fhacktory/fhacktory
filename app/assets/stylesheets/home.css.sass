@@ -14,9 +14,6 @@ $base-line-height: 21px
     //&.grid
     //  +baseline-grid-background($base-line-height, #fff)
 
-    //TODO: remove this line
-    height: 2000px
-
     .background
       position: fixed
       left: 50%
@@ -107,10 +104,11 @@ $base-line-height: 21px
       h4
         +adjust-font-size-to(21px)
 
-      img.avatar
-        background: #eee
-        width: 150px !important
-        height: 150px !important
-        +border-radius(1000px)
+      .avatar
+        img
+          $size: 6 * $base-line-height
+          +border-radius(1000px)
+          width:  $size
+          height: $size
 
 
