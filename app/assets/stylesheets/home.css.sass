@@ -2,14 +2,17 @@
 @import compass/typography
 @import compass/css3/border-radius
 
-$base-font-size: 16px
-$base-line-height: 24px
+$base-font-size: 14px
+$base-line-height: 21px
 +establish-baseline
 
 .home.index
 
   .container
     position: relative
+
+    //&.grid
+    //  +baseline-grid-background($base-line-height, #fff)
 
     //TODO: remove this line
     height: 2000px
@@ -22,8 +25,7 @@ $base-line-height: 24px
       margin-left: -900px
 
     header
-      +padding-leader(7)
-      +padding-trailer(1)
+      +padding-leader(5)
       text-align: center
       position: relative
       z-index: 0
@@ -36,35 +38,74 @@ $base-line-height: 24px
           text-decoration: none
           color: inherit
 
+        $logo-height: 6 * $base-line-height
+        $logo-width:  $logo-height * image-width('fhacktory.png') / image-height('fhacktory.png')
         h1
-          width:  image-width('fhacktory.png')
-          margin: 0 auto
+          +adjust-font-size-to($base-font-size)
+          +adjust-leading-to(6)
           +replace-text('fhacktory.png')
-          +adjust-leading-to(3)
+          width: $logo-width
+          background-size: 100%
+          background-position: left top
+          margin: 0 auto
 
         .gear
+          $size: 45.69 * $logo-width / 100
           position: absolute
-          left: 75px
-          top: -180px + (image-height('fhacktory.png') / 2)
+          left: 9.52 * $logo-width / 100
+          top: -$size/2 + ($logo-height/ 2)
           z-index: -1
 
-          width: 360px
-          height: 360px
+          width: $size
+          height: $size
 
       h2
-        +adjust-font-size-to(64px)
-        +padding-leader(3,64px)
-        +padding-trailer(2,64px)
+        +adjust-font-size-to(56px)
+        +padding-leader(3,56px)
+        +padding-trailer(2,56px)
 
       .event
-        +adjust-font-size-to(32px)
+        +adjust-font-size-to(28px)
+
+      .register
+        +leader(2)
+
+        .btn-xlg
+          +adjust-font-size-to(28px)
+          +padding-leader(0.5)
+          +padding-trailer(0.5)
+          padding-left:   1em
+          padding-right:  1em
+          border: none
 
 
     .content
       .row
         +leader(1)
       .title
-        +leader(5)
+        +leader(12)
+
+      h3
+        +adjust-font-size-to(28px)
+
+        fieldset
+          font-size: inherit
+          line-height: inherit
+          border-top: solid 1px #eee
+
+          legend
+            font-size: inherit
+            line-height: inherit
+            border: none
+            width: auto
+            font-weight: bold
+            text-transform: uppercase
+            color: #eee
+            margin: 0
+            padding: 0 1em
+
+      h4
+        +adjust-font-size-to(21px)
 
       img.avatar
         background: #eee

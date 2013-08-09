@@ -1,65 +1,67 @@
 .container
   =image_tag 'header.jpg', width: '1800', height: '1200', class: 'background', :'data-stellar-ratio' => 0.3
 
-  %header
+  .container.grid
 
-    .fhacktory_main_title
-      =image_tag 'gear.png', class: 'gear'
-      =link_to root_path do
-        %h1 Fhacktory
-    %h2 Building contest for futuremakers.
-    %p.event Next event: Sep. 28-29 @ Lyon, FR
-    %p
-      %button.btn.btn-lg.btn-primary Register
+    %header
 
- 
-  .content
-    .row.text-center
-      .col-lg-12
-        %h3
-          %fieldset
-            %legend The Rules
+      .fhacktory_main_title
+        =image_tag 'gear.png', class: 'gear'
+        =link_to root_path do
+          %h1 Fhacktory
+      %h2 Building contest for futuremakers.
+      %p.event Next event: Sep. 28-29 @ Lyon, FR
+      %p.register
+        %button.btn.btn-xlg.btn-primary Register
 
-    .row.text-center
-      .col-lg-4
-        %h4
-          %em Build
-          something great
-        %ul
-          %li Team 1-4
-          %li Any technology
+   
+    .content
+      .row.text-center.title
+        .col-lg-12
+          %h3
+            %fieldset
+              %legend The Rules
 
-      .col-lg-4
-        %h4
-          %em Deliver
-          within 36h
-        %ul
-          %li Your hack will be beta-tested
+      .row.text-center
+        .col-lg-4
+          %h4
+            %em Build
+            %br/
+            something great
 
-      .col-lg-4
-        %h4
-          %em Win
-          awesome prizes
 
-    .row.text-center.title
-      .col-lg-12
-        %h3
-          %fieldset
-            %legend The Sponsors
+        .col-lg-4
+          %h4
+            %em Deliver
+            %br/
+            within 36h
 
-    .row.text-center.title
-      .col-lg-12
-        %h3
-          %fieldset
-            %legend The Who
 
-    .row.text-center
-      .col-lg-4
-        %img.avatar
-        %h3 Adrien Joly
-      .col-lg-4
-        %img.avatar
-        %h3 Sébastien de Lavison
-      .col-lg-4
-        %img.avatar.img-responsive
-        %h3 Thomas Guillory
+        .col-lg-4
+          %h4
+            %em Win
+            %br/
+            awesome prizes
+
+      .row.text-center.title
+        .col-lg-12
+          %h3
+            %fieldset
+              %legend The Sponsors
+
+      .row.text-center.title
+        .col-lg-12
+          %h3
+            %fieldset
+              %legend The Who
+
+      .row.text-center
+        .col-lg-4
+          %img.avatar
+          %h3 Adrien Joly
+        .col-lg-4
+          %img.avatar
+          %h3 Sébastien de Lavison
+        .col-lg-4
+          %img.avatar.img-responsive
+          %h3 Thomas Guillory
