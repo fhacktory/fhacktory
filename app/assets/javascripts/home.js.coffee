@@ -8,6 +8,11 @@ $ =>
   $.stellar
     responsive: true
 
+  # Build scroll menu
+  $('.container.grid').scrollNav
+    showHeadline: false
+    topLinkText: 'Home'
+
   # Start rotating gear
   $('.gear','.home.index').css('transform', 'rotate(0rad)')
   rotate = ->
