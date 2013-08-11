@@ -91,6 +91,7 @@ $base-line-height: 21px
           border-top: solid 1px #eee
 
           legend
+            position: relative
             font-size: inherit
             line-height: inherit
             border: none
@@ -99,7 +100,23 @@ $base-line-height: 21px
             text-transform: uppercase
             color: #eee
             margin: 0
-            padding: 0 1em
+            padding: 0 2em
+
+            &:before, &:after
+              content: ""
+              width: 21.5px
+              height: 21px
+              background-image: image-url('minigear.png')
+              background-size: 100% 100%
+              position: absolute
+              top: 10.5px
+
+            &:before
+              left: 1em
+              margin-left: -10.75px
+            &:after
+              right: 1em
+              margin-right: -10.75px
 
       h4
         +adjust-font-size-to(21px)
