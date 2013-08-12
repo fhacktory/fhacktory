@@ -11,8 +11,8 @@ $base-line-height: 21px
   .container
     position: relative
 
-    &.grid
-      +baseline-grid-background($base-line-height, #fff)
+    //&.grid
+    //  +baseline-grid-background($base-line-height, #fff)
 
     .background
       position: fixed
@@ -187,10 +187,11 @@ $base-line-height: 21px
         .col-lg-4
           padding: 0 4em
 
-        h4 em
-          +adjust-font-size-to(42px)
+        h4
+          +adjust-font-size-to(52.5px)
         span
           +adjust-font-size-to(28px)
+          display: block
         p
           +adjust-font-size-to(16px)
           +leader(1,16px)
