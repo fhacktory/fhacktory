@@ -111,7 +111,7 @@ $base-line-height: 21px
       .row
         +leader(1)
       .title
-        +leader(8)
+        +leader(16)
 
       h3
         +adjust-font-size-to(28px)
@@ -149,8 +149,30 @@ $base-line-height: 21px
               right: 1em
               margin-right: -10.75px
 
-      h4
-        +adjust-font-size-to(21px)
+      .manifest-content
+        +leader(3)
+        padding-left: 5em
+        color: #999
+
+        .col-lg-12
+          +adjust-font-size-to(18px)
+
+          &.enjoy
+            +adjust-font-size-to(28px)
+            +leader(2,28px)
+
+        .row
+          +leader(0)
+
+        b
+          color: #eee
+
+
+      .enjoy
+        display: block
+        margin: 0 auto
+        text-transform: uppercase
+        color: #eee
 
       .avatar
         img
@@ -158,5 +180,3 @@ $base-line-height: 21px
           +border-radius(1000px)
           width:  $size
           height: $size
-
-
