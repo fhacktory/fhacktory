@@ -11,8 +11,8 @@ $base-line-height: 21px
   .container
     position: relative
 
-    //&.grid
-    //  +baseline-grid-background($base-line-height, #fff)
+    &.grid
+      +baseline-grid-background($base-line-height, #fff)
 
     .background
       position: fixed
@@ -36,7 +36,7 @@ $base-line-height: 21px
         margin: 0
 
         .scroll-nav-item
-          +adjust-font-size-to(18px)
+          +adjust-font-size-to(17.5px)
           padding-left:   1em
           padding-right:  1em
           display: inline-block
@@ -155,7 +155,7 @@ $base-line-height: 21px
         color: #999
 
         .col-lg-12
-          +adjust-font-size-to(18px)
+          +adjust-font-size-to(17.5px)
 
           &.enjoy
             +adjust-font-size-to(28px)
