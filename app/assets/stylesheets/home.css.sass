@@ -180,3 +180,17 @@ $base-line-height: 21px
           +border-radius(1000px)
           width:  $size
           height: $size
+
+      .rules
+        +leader(3)
+
+        .col-lg-4
+          padding: 0 4em
+
+        h4 em
+          +adjust-font-size-to(42px)
+        span
+          +adjust-font-size-to(28px)
+        p
+          +adjust-font-size-to(16px)
+          +leader(1,16px)
