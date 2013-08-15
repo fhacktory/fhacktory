@@ -202,6 +202,7 @@ $base-line-height: 21px
       .schedule
         h4
           +adjust-font-size-to(21px)
+          color: #D96D00
 
         .row
           +leader(0)
@@ -227,17 +228,21 @@ $base-line-height: 21px
         h4
           +adjust-font-size-to(21px)
 
+        .col-lg-12
+          padding: 0 5em
+
         .row
-          +leader(0)
+          +leader(2)
           +trailer(0)
           width: 100%
-          margin: 0 auto
+          margin-left: auto
+          margin-right: auto
 
         dd
           +adjust-font-size-to(21px)
-          +leader(1,21px)
           display: block
           font-weight: bold
+          color: #D96D00
 
         dt
           +adjust-font-size-to(16px)
