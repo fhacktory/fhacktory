@@ -184,9 +184,6 @@ $base-line-height: 21px
       .rules
         +leader(3)
 
-        .col-lg-4
-          padding: 0 4em
-
         h4
           +adjust-font-size-to(52.5px)
         span
@@ -195,3 +192,27 @@ $base-line-height: 21px
         p
           +adjust-font-size-to(16px)
           +leader(1,16px)
+
+      .schedule
+        h4
+          +adjust-font-size-to(21px)
+
+        .row
+          +leader(0)
+          +trailer(0)
+          width: 100%
+          margin: 0 auto
+
+        dd
+          +adjust-font-size-to(21px)
+          display: block
+          float: left
+          width: 4em
+          font-weight: bold
+
+        dt
+          +adjust-font-size-to(16px)
+          +adjust-leading-to(2,16px)
+          display: block
+          font-weight: normal
+          padding-left: 84px
