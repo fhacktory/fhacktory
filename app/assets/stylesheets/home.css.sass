@@ -216,3 +216,24 @@ $base-line-height: 21px
           display: block
           font-weight: normal
           padding-left: 84px
+
+      .fhack
+        h4
+          +adjust-font-size-to(21px)
+
+        .row
+          +leader(0)
+          +trailer(0)
+          width: 100%
+          margin: 0 auto
+
+        dd
+          +adjust-font-size-to(21px)
+          +leader(1,21px)
+          display: block
+          font-weight: bold
+
+        dt
+          +adjust-font-size-to(16px)
+          display: block
+          font-weight: normal
