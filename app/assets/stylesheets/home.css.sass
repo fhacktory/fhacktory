@@ -4,7 +4,12 @@
 
 $base-font-size: 14px
 $base-line-height: 21px
-+establish-baseline
+* html
+  font-size: 87.5% !important
+
+html, body
+  font-size: 14px !important
+  line-height: 1.5em !important
 
 .home.index
 
@@ -177,8 +182,10 @@ $base-line-height: 21px
 
       .avatar
         img
-          $size: 6 * $base-line-height
+          $size: 5 * $base-line-height
           +border-radius(1000px)
+          +leader(0.5)
+          +trailer(0.5)
           width:  $size
           height: $size
 
@@ -250,3 +257,10 @@ $base-line-height: 21px
           +adjust-font-size-to(16px)
           display: block
           font-weight: normal
+
+      .who
+        .col-lg-4
+          padding: 0 3em
+
+        .desc
+          +adjust-font-size-to(14px)

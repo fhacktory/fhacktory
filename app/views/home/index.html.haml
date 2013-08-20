@@ -253,16 +253,40 @@
             %fieldset
               %legend Who are we?
 
-      .row.text-center
+      .row.text-center.who
         .col-lg-4
           .avatar
             =image_tag 'avatars/ajoly.jpg'
-          %h4 Adrien Joly
+          .desc
+            Adrien
+            %br/
+            Operations @#{render 'fhacktory'}
+            %br/
+            Lead Developer @Whyd.com
+            %br/
+            Loves Node.js, Music, and Beer!
+            %br/
+            =link_to 'adrienjoly.com', 'http://adrienjoly.com', target: '_blank'
         .col-lg-4
           .avatar
             =image_tag 'avatars/slavison.jpg'
-          %h4 Sébastien de Lavison
+          .desc
+            Seb
+            %br/
+            Sponsoring @#{render 'fhacktory'}
+            %br/
+            Multi-faceted entrepreneur, American at heart
+            %br/
+            Loves Running, Whisky and Having fun!
         .col-lg-4
           .avatar
             =image_tag 'avatars/tguillory.jpg'
-          %h4 Thomas Guillory
+          .desc
+            Thomas
+            %br/
+            Tech Hero @#{render 'fhacktory'}
+            %br/
+            Full stack web dev, RoR --&gt; Angular.js
+            %br/
+            Loves Beautiful code, Climbing, and Running!
+            %br/
