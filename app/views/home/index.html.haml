@@ -10,7 +10,10 @@
         =link_to root_path do
           %h1 Fhacktory
       %h2 Build. Deliver. Win.
-      %p.event Next event: Sep. 28-29 @ Lyon, FR
+      %p.what Hackathon, back to basics.
+      %p.event
+        Next:
+        %em Lyon, Sep. 28-29
       %p.register
         %a.btn.btn-xlg.btn-primary{href: 'http://fhacktorylyon.eventbrite.com'}
           Register
@@ -21,7 +24,7 @@
         .col-lg-12
           %h3
             %fieldset
-              %legend The Manifest - Build.
+              %legend The Manifest - Build
 
       .manifest-content
         .row
@@ -42,41 +45,47 @@
             pitch a startup concept showing boring mockups and fancy power points.
         .row
           .col-lg-12
-            And we'll provide everything for you to have fun during the fhacktory
+            And we'll provide everything for you to have fun during the
+            =render 'fhacktory'
 
       .row.text-center.title
         .col-lg-12
           %h3
             %fieldset
-              %legend Evaluation - Deliver.
+              %legend Evaluation - Deliver
 
       .row.text-center.rules
         .col-lg-4
           %h4
             %em 60%
-          %span Continuous Evaluation
-          %p by the fhacktory advocates while helping out with your hack!
+          %span.desc Continuous Evaluation
+          %p
+            by the
+            =render 'fhacktory'
+            advocates while helping out with your hack!
         .col-lg-4
           %h4
             %em 30%
-          %span Alpha testing
-          %p by the fhactory advocates and the audience
+          %span.desc Alpha testing
+          %p by attendees and other trusted tech savvy
         .col-lg-4
           %h4
             %em 10%
-          %span Stage score
-          %p by measuring the enthusiasm of the crowd during your demo
+          %span.desc Stage score
+          %p by the crowd during your demo
 
       .row.text-center.title
         .col-lg-12
           %h3
             %fieldset
-              %legend Prizes - Win.
+              %legend Prizes - Win
 
       .row
-        .col-lg-12
-          One kindle fire per winners, + Blend (tickets + demo)
-          \...and more to come! Stay tuned!
+        .col-lg-12.col-padding
+          %ul
+            %li 1 kindle fire per winners
+            %li Blend (tickets + demo)
+            %li ...and more to come! Stay tuned!
 
       .row.text-center.title
         .col-lg-12
@@ -86,17 +95,21 @@
 
       .row.sponsors.text-center
         .col-lg-12
-          =link_to  'https://www.mailjet.com/' do
-            =image_tag 'sponsors/mailjet.png',    alt: 'Mailjet'
+          =link_to  'http://aws.amazon.com/' do
+            =image_tag 'sponsors/amazon-web-services.jpg',  alt: 'Amazon Web Services'
 
+          =link_to  'https://www.mailjet.com/' do
+            =image_tag 'sponsors/mailjet.png',              alt: 'Mailjet'
+
+        .col-lg-12
           =link_to  'http://www.alloresto.fr/' do
-            =image_tag 'sponsors/alloresto.png',  alt: 'AlloResto.fr'
+            =image_tag 'sponsors/alloresto.png',            alt: 'AlloResto.fr'
 
           =link_to  'http://www.elbmultimedia.com/' do
-            =image_tag 'sponsors/elb.png',        alt: 'ELB Multimedia'
+            =image_tag 'sponsors/elb.png',                  alt: 'ELB Multimedia'
 
           =link_to  'http://www.coca-cola.com' do
-            =image_tag 'sponsors/coca-cola.png',  alt: 'Coca-Cola'
+            =image_tag 'sponsors/coca-cola.png',            alt: 'Coca-Cola'
 
       .row.text-center.title
         .col-lg-12
@@ -109,53 +122,56 @@
           %h4 Saturday 09/28
 
           .row
-            %dd 9h
+            %dd 9am
             %dt Registration opening and Breakfast
           .row
-            %dd 10h
-            %dt Welcome address from the fhacktory, and sponsors talks
+            %dd 10am
+            %dt
+              Welcome address from the
+              #{render 'fhacktory'},
+              and sponsors talks
           .row
-            %dd 10h30
+            %dd 11am
             %dt Ideas presentation, team building and brainstorming
           .row
-            %dd 12h
-            %dt Lunch time!
+            %dd Noon
+            %dt Lunch time
           .row
-            %dd 13h
+            %dd 1pm
             %dt Get set, ready, go!
           .row
-            %dd 16h30
+            %dd 5pm
             %dt Snacks
           .row
-            %dd 19h30
-            %dt Diner
+            %dd 8pm
+            %dt Dinner
 
         .col-lg-6
           %h4 Sunday 09/29
 
           .row
-            %dd 2h
+            %dd 2am
             %dt Snacks
           .row
-            %dd 9h
+            %dd 9am
             %dt Breakfast
           .row
-            %dd 13h
-            %dt Beta time! Hacks must be available for beta testers
+            %dd 1pm
+            %dt Alpha time! Hacks must be available for Alpha testers
           .row
-            %dd 13h
-            %dt Lunch time!
+            %dd 1pm
+            %dt Lunch
           .row
-            %dd 14h
-            %dt Break and informal interviews between advocates and teams
+            %dd 2pm
+            %dt Break, and informal interviews between advocates and teams
           .row
-            %dd 16h
-            %dt Teams present their hack to the crowd. This is not a pitch, just the perfect time to share their work with hackers.
+            %dd 4pm
+            %dt Teams demo their hack. This is not a pitch, just the perfect time to share your work with the crowd
           .row
-            %dd 18h
-            %dt Best hack announcement
+            %dd 6pm
+            %dt Best hacks announcement
           .row
-            %dd 18h30
+            %dd 7pm
             %dt Cocktail
 
 
@@ -170,25 +186,66 @@
           .row
             %dd Why should I register?
             %dt
-              This will be the first Hackathon taking place in Lyon! Do you really need more? Ok: sexy venue, great people, amazing athmospher, awesome prizes...
+              =render 'fhacktory'
+              will be the first hackathon taking place in Lyon! Do you really need more? Ok: sexy venue, free drinks and food, great people, amazing atmosphere, awesome prizes...
               %br/
-              Looking for throwing some lines of codes, to build/develop crazy things, or just to have fun end of septembre? Stop reading, and register ;-)
-
-          .row
-            %dd What does the fee cover?
-            %dt All inclusive: breakfasts, lunches, dinner, breaks, soft drinks, beers...!
+              If you are looking for throwing some lines of codes, building/developing crazy things, or just having fun end of september...
+              =render 'fhacktory'
+              is the place to be. So please, stop reading and register ;-)
 
           .row
             %dd Why isn't this event free?
-            %dt As you can imagine, throwing an "all inclusive" two days hackathon has a cost. We only ask you for a small participation. And between us: you'll spend a lot more over the week-end if you don't come to the event ;-)
+            %dt Not free, sure… but pretty cheap don’t you think? A two days hackathons with free food and drinks costs a lot more than the price you will pay. But thanks to our amazing sponsors, the biggest portion of the expenses are already covered. And between us: you will spend a lot more over the week-end if you don't come to the event (two breakfasts, two lunches, one dinner, two breaks, soft drinks, beers…)!
+
+          .row
+            %dd Where does it take place?
+            %dt
+              =render 'fhacktory'
+              is hosted by Netissime (elb Group) located 45-47 rue Francis de Pressensé 69100 Villeurbanne – France (#{link_to "http://goo.gl/maps/A6GDo", "http://goo.gl/maps/A6GDo", target: '_blank'}) - a 4min walk from the subway A stop République Villeurbanne (#{link_to "http://goo.gl/maps/q5G0B", "http://goo.gl/maps/q5G0B", target: '_blank'})
 
           .row
             %dd I am a biz guy. Is fHACKtory for me?
-            %dt Of course it is. Sure we don't want you to waste time on most of the biz sutff, but there is still work for you: leadership, communication, wording...
+            %dt Of course it is. Sure we don't want you to waste time on most of the biz stuff, but there is still work for you: leadership, product management, communication, wording…
 
           .row
-            %dd Quel type de Hack? / Quels critères de séléction des gagnants
-            %dt see evaluation form: https://fhacktory.hackpad.com/Team-evaluation-sheet-t4QAQQ3CX9y
+            %dd How many members per team?
+            %dt Teams of two, three and four are welcome. Working as a team is one of the most important thing when you start a project, which is why we would like to avoid teams of one person. Between, team members must be human being: pets and robots are not considered as human being! 
+
+          .row
+            %dd What to build?
+            %dt That is a very good question! Build anything that requires some kind of coding: app, web app, internet of things, dev tools (API / Framework)...
+
+          .row
+            %dd Can I start coding prior the event start?
+            %dt Definitely not! You can start working on anything you want but the code. By anything we mean: creating your wireframes, designing your logo, building your hardware... Sorry, but we need to keep things fair.
+
+          .row
+            %dd What means “deliver”? // What should be done?
+            %dt You must be able to provide access to an Alpha version and demo your hack on time. So, basically: finish what you started! // We don’t expect you to build some kind of top of the art product. Just do what you have to do and don’t waste time on optimizations: Build. Deliver. Win.
+
+          .row
+            %dd Who are the “advocates” evaluating for 60%?
+            %dt
+              Advocates will be tech experts thoroughly hand picked by the team @#{render 'fhacktory'}.
+
+          .row
+            %dd How will the advocates judge the teams (Evaluation form)?
+            %dt The main aspects that will be evaluated are: Complementarity of team members, Collaboration and internal communication, Adaptivity / flexibility of team, Ratio of team-made code, Technical risks, Structure of the code, Individual skills...
+
+          .row
+            %dd Who will test my alpha?
+            %dt
+              Your Alpha will be tested by anybody attending the
+              =render 'fhacktory'
+              (participants, advocates, sponsors and organizers) as well as outside tech savvy selected by the organizers.
+
+          .row
+            %dd How will the crowd vote during the demo?
+            %dt Easy, we will measure their enthusiasm (applause meter)!
+
+          .row
+            %dd Is it possible to sleep at the venue?
+            %dt To sleep? Not sure we understand what you mean by that. Laying down for few minutes will be possible but do you really want to waste more of your precious time "sleeping"!? Don't worry, Coca Cola is providing Burn so you won't need to worry about getting some sleep.
 
       .row.text-center.title
         .col-lg-12
