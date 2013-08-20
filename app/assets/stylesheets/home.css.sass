@@ -26,6 +26,21 @@ html, body
       width: 1800px
       margin-left: -900px
 
+    .socials
+      +adjust-font-size-to(21px)
+      position: fixed
+      top: 0
+      right: 0
+      z-index: 150
+      width: 4em
+      background: #000
+      text-align: right
+      padding-right: 1em
+
+      a, a:active, a:link, a:hover, a:visited
+        text-decoration: none
+        color: inherit
+
     .scroll-nav
       position: fixed
       top: 0
@@ -34,7 +49,7 @@ html, body
       width: 100%
       background: #000
       text-align: right
-      padding-right: 2em
+      padding-right: 6em
 
       .scroll-nav-list
         list-style: none
