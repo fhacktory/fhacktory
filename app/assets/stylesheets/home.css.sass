@@ -82,6 +82,10 @@ html, body
       position: relative
       z-index: 0
 
+
+      @media (max-width: 768px)
+        +padding-leader(3)
+
       .fhacktory_main_title
         position: relative
         display: inline-block
@@ -113,7 +117,7 @@ html, body
 
         @media (max-width: 768px)
           h1
-            $logo-height: 2.5 * $base-line-height
+            $logo-height: 3 * $base-line-height
             $logo-width:  $logo-height * image-width('fhacktory.png') / image-height('fhacktory.png')
             width: $logo-width
           .gear
@@ -135,9 +139,14 @@ html, body
           +adjust-font-size-to(42px)
           +padding-leader(0,42px)
           +padding-trailer(0,42px)
+        
+          span
+            display: block
 
       .what
         +adjust-font-size-to(28px)
+        @media (max-width: 768px)
+          +adjust-font-size-to(21px)
 
       .event
         +adjust-font-size-to(28px)
@@ -168,6 +177,9 @@ html, body
 
       h3
         +adjust-font-size-to(28px)
+
+        @media (max-width: 768px)
+          +adjust-font-size-to(17.5px)
 
         fieldset
           font-size: inherit
@@ -214,9 +226,9 @@ html, body
         .col-lg-12
           +adjust-font-size-to(17.5px)
 
-          &.enjoy
-            +adjust-font-size-to(28px)
-            +leader(2,28px)
+          @media (max-width: 768px)
+            +adjust-font-size-to(14px)
+
 
         .row
           +leader(0)
@@ -293,6 +305,9 @@ html, body
 
         .col-lg-12
           padding: 0 5em
+
+          @media (max-width: 768px)
+            padding: 0 1em
 
         .row
           +leader(2)
