@@ -105,20 +105,23 @@
 
       .row.sponsors.text-center
         .col-lg-12
-          =link_to  'http://aws.amazon.com/' do
+          =link_to  'http://aws.amazon.com/',           target: '_blank' do
             =image_tag 'sponsors/amazon-web-services.jpg',  alt: 'Amazon Web Services'
 
-          =link_to  'https://www.mailjet.com/' do
+          =link_to  'https://www.mailjet.com/',         target: '_blank' do
             =image_tag 'sponsors/mailjet.png',              alt: 'Mailjet'
 
+          =link_to  'http://www.blendconference.com/',  target: '_blank' do
+            =image_tag 'sponsors/blend.jpg',                alt: 'Blend'
+
         .col-lg-12
-          =link_to  'http://www.alloresto.fr/' do
+          =link_to  'http://www.alloresto.fr/',         target: '_blank' do
             =image_tag 'sponsors/alloresto.png',            alt: 'AlloResto.fr'
 
-          =link_to  'http://www.elbmultimedia.com/' do
+          =link_to  'http://www.elbmultimedia.com/',    target: '_blank' do
             =image_tag 'sponsors/elb.png',                  alt: 'ELB Multimedia'
 
-          =link_to  'http://www.coca-cola.com' do
+          =link_to  'http://www.coca-cola.com',         target: '_blank' do
             =image_tag 'sponsors/coca-cola.png',            alt: 'Coca-Cola'
 
       .row.text-center.title
