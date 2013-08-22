@@ -28,6 +28,10 @@ html, body
 
     .socials
       +adjust-font-size-to(21px)
+
+      @media (max-width: 950px)
+        +adjust-font-size-to(15.75px)
+
       position: fixed
       top: 0
       right: 0
@@ -63,6 +67,10 @@ html, body
 
         .scroll-nav-item
           +adjust-font-size-to(17.5px)
+
+          @media (max-width: 950px)
+            +adjust-font-size-to(15.75px)
+
           padding-left:   1em
           padding-right:  1em
           display: inline-block
