@@ -15,7 +15,8 @@
 			showHeadline: true,
 			showTopLink: true,
 			location: 'insertBefore',
-      topLinkText: 'Top'
+      topLinkText: 'Top',
+      itemLabels: []
 		};
 
 		$.extend(settings, options);
@@ -52,7 +53,7 @@
 			$sections.each(function(i) {
 				var sectionID	= 'jumpNav-' + (i + 1);
 				var $offset		= $(this).offset().top;
-				var $text		= $(this).text();
+				var $text		= settings.itemLabels[i] ? settings.itemLabels[i] : $(this).text();
 
 				$(this).attr('id', sectionID);
 				$sectionArray.push( {id: sectionID, offset: $offset, text: $text} );

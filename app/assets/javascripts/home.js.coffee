@@ -12,6 +12,11 @@ $ =>
   $('.container.grid').scrollNav
     showHeadline: false
     topLinkText: 'Home'
+    itemLabels: [
+      'Build',
+      'Deliver',
+      'Win'
+    ]
 
   # Start rotating gear
   $('.gear','.home.index').css('transform', 'rotate(0rad)')
