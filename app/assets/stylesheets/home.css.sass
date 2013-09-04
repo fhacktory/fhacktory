@@ -292,12 +292,16 @@ html, body
 
       .sponsors
         img
-          height: 4*$base-line-height
+          height: 100%
+
+          &.mailjet
+            height: 150%
         a
           display: inline-block
           +leader(2)
           margin-left: 2em
           margin-right: 2em
+          height: 4*$base-line-height
 
         &.lcdw
           +leader(5)
