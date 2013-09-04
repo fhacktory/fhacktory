@@ -280,15 +280,32 @@ html, body
           text-align: center
 
         h4
-          +adjust-font-size-to(21px)
-          color: #D96D00
+          +adjust-font-size-to(42px)
+          text-align: center
+          font-weight: bold
 
-        ul li
+          &.gold
+            color: #CFB53B
+          &.silver
+            color: #E6E8FA
+          &.bronze
+            color: #A67D3D
+
+        ul
           +adjust-font-size-to(17.5px)
+          list-style-type: none
 
-          a
-            color: inherit
+          li
+            display: inline-block
 
+            &:after
+              content: ", "
+
+            &:last-child:after
+              content: "."
+
+            a
+              color: #d96d00
 
       .sponsors
         img
