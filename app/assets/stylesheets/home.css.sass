@@ -281,7 +281,7 @@ html, body
 
         h4
           +adjust-font-size-to(42px)
-          text-align: center
+          text-align: left
           font-weight: bold
 
           &.gold
@@ -290,22 +290,17 @@ html, body
             color: #E6E8FA
           &.bronze
             color: #A67D3D
+          &.all
+            text-align: center
+            +leader(1, 42px)
 
         ul
-          +adjust-font-size-to(17.5px)
+          +adjust-font-size-to(15.75px)
+          padding: 0
           list-style-type: none
 
-          li
-            display: inline-block
-
-            &:after
-              content: ", "
-
-            &:last-child:after
-              content: "."
-
-            a
-              color: #d96d00
+          li a
+            color: #d96d00
 
       .sponsors
         img

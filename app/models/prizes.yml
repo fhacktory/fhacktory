@@ -7,14 +7,6 @@
   description: 1 VPS
   link: http://www.netissime.com/serveurs/cloud/
 - rank: 1
-  sponsor: Amazon
-  description: 1 Kindle Fire HD 7"
-  link: http://www.amazon.com/Kindle-Fire-HD/dp/B0083PWAPW
-- rank: 1
-  sponsor: Amazon
-  description: AWS credits
-  link: http://aws.amazon.com/fr/
-- rank: 1
   sponsor: Github
   description: 1yr silver
   link: https://github.com/plans
@@ -30,6 +22,15 @@
   sponsor: La Cordée
   description: 1mo free coworking
   link: http://www.la-cordee.net/offre-tarifs-coworking/
+- rank: 1
+  sponsor: Amazon
+  description: 1 Kindle Fire HD 7"
+  link: http://www.amazon.com/Kindle-Fire-HD/dp/B0083PWAPW
+- rank: 1
+  sponsor: Amazon
+  description: AWS credits
+  link: http://aws.amazon.com/fr/
+
 - rank: 2
   sponsor: Mailjet
   description: 1yr silver
@@ -38,14 +39,6 @@
   sponsor: Netissime
   description: 1 VPS
   link: http://www.netissime.com/serveurs/cloud/
-- rank: 2
-  sponsor: Amazon
-  description: 1 Kindle Fire HD 7"
-  link: http://www.amazon.com/Kindle-Fire-HD/dp/B0083PWAPW
-- rank: 2
-  sponsor: Amazon
-  description: AWS credits
-  link: http://aws.amazon.com/fr/
 - rank: 2
   sponsor: Github
   description: 1yr bronze
@@ -62,6 +55,15 @@
   sponsor: La Cordée
   description: 2wk free coworking
   link: http://www.la-cordee.net/offre-tarifs-coworking/
+- rank: 2
+  sponsor: Amazon
+  description: 1 Kindle Fire HD 7"
+  link: http://www.amazon.com/Kindle-Fire-HD/dp/B0083PWAPW
+- rank: 2
+  sponsor: Amazon
+  description: AWS credits
+  link: http://aws.amazon.com/fr/
+
 - rank: 3
   sponsor: Mailjet
   description: 1yr silver
@@ -86,6 +88,7 @@
   sponsor: La Cordée
   description: 1wk free coworking
   link: http://www.la-cordee.net/offre-tarifs-coworking/
+
 - rank: 4
   sponsor: Mailjet
   description: 6mo bronze

@@ -96,29 +96,30 @@
             %h4.gold 1st Team
             %ul
               -@prizes[1].each do |prize|
-                %li= link_to prize.description, prize.link, target: '_blank'
+                =render prize 
 
           .col-lg-4
             %h4.silver 2nd Team
             %ul
               -@prizes[2].each do |prize|
-                %li= link_to prize.description, prize.link, target: '_blank'
+                =render prize 
 
           .col-lg-4
             %h4.bronze 3rd Team
             %ul
               -@prizes[3].each do |prize|
-                %li= link_to prize.description, prize.link, target: '_blank'
+                =render prize 
 
         .row
           .col-lg-12
-            %h4 All participants
+            %h4.all All participants
         .row
-          .col-lg-12
+          .col-lg-4
+          .col-lg-4
             %ul
               -@prizes[4].each do |prize|
-                %li= link_to prize.description, prize.link, target: '_blank'
-
+                =render prize 
+          .col-lg-4
 
 
       .row.text-center.title
