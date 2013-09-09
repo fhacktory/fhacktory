@@ -12,6 +12,7 @@ end
 
 gem 'haml-rails'
 gem 'font-awesome-rails'
+gem 'active_hash'
 
 # Gems used only for assets and not required
 # in production environments by default.

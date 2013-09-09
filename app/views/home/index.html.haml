@@ -92,54 +92,33 @@
 
       .prizes
         .row
-          .col-lg-12
+          .col-lg-4
             %h4.gold 1st Team
-        .row
-          .col-lg-12
             %ul
-              %li= link_to '1yr silver Mailjet',        'https://www.mailjet.com/pricing',                    target: '_blank'
-              %li= link_to '1 VPS Netissime',           'http://www.netissime.com/serveurs/cloud/',           target: '_blank'
-              %li= link_to '1 Kindle Fire HD 7"',  'http://www.amazon.com/Kindle-Fire-HD/dp/B0083PWAPW', target: '_blank'
-              %li= link_to 'AWS credits',               'http://aws.amazon.com/fr/',                          target: '_blank'
-              %li= link_to '1yr silver Github',         'https://github.com/plans',                           target: '_blank'
-              %li= link_to '1yr silver Prefinery',      'https://www.prefinery.com/pricing',                  target: '_blank'
-              %li= link_to '1yr pro Algolia',           'http://www.algolia.com/pricing',                     target: '_blank'
-              %li= link_to '1mo free coworking @ La Cordée Liberté', 'http://www.la-cordee.net/offre-tarifs-coworking/', target: '_blank'
-        .row
-          .col-lg-12
+              -@prizes[1].each do |prize|
+                %li= link_to prize.description, prize.link, target: '_blank'
+
+          .col-lg-4
             %h4.silver 2nd Team
-        .row
-          .col-lg-12
             %ul
-              %li= link_to '1yr silver Mailjet',        'https://www.mailjet.com/pricing',                    target: '_blank'
-              %li= link_to '1 VPS Netissime',           'http://www.netissime.com/serveurs/cloud/',           target: '_blank'
-              %li= link_to '1 Kindle Fire HD 7"',  'http://www.amazon.com/Kindle-Fire-HD/dp/B0083PWAPW', target: '_blank'
-              %li= link_to 'AWS credits',               'http://aws.amazon.com/fr/',                          target: '_blank'
-              %li= link_to '1yr bronze Github',         'https://github.com/plans',                           target: '_blank'
-              %li= link_to '1yr bronze Prefinery',      'https://www.prefinery.com/pricing',                  target: '_blank'
-              %li= link_to '1yr premium Algolia',       'http://www.algolia.com/pricing',                     target: '_blank'
-              %li= link_to '2wk free coworking @ La Cordée Liberté', 'http://www.la-cordee.net/offre-tarifs-coworking/', target: '_blank'
-        .row
-          .col-lg-12
+              -@prizes[2].each do |prize|
+                %li= link_to prize.description, prize.link, target: '_blank'
+
+          .col-lg-4
             %h4.bronze 3rd Team
-        .row
-          .col-lg-12
             %ul
-              %li= link_to '1yr silver Mailjet',        'https://www.mailjet.com/pricing',                    target: '_blank'
-              %li= link_to '1 VPS Netissime',           'http://www.netissime.com/serveurs/cloud/',           target: '_blank'
-              %li= link_to '6mo bronze Github',         'https://github.com/plans',                           target: '_blank'
-              %li= link_to '1yr bronze Prefinery',      'https://www.prefinery.com/pricing',                  target: '_blank'
-              %li= link_to '1yr premium Algolia',       'http://www.algolia.com/pricing',                     target: '_blank'
-              %li= link_to '1wk free coworking @ La Cordée Liberté', 'http://www.la-cordee.net/offre-tarifs-coworking/', target: '_blank'
+              -@prizes[3].each do |prize|
+                %li= link_to prize.description, prize.link, target: '_blank'
+
         .row
           .col-lg-12
             %h4 All participants
         .row
           .col-lg-12
             %ul
-              %li= link_to '6mo bronze Mailjet',        'https://www.mailjet.com/pricing',                    target: '_blank'
-              %li= link_to '6mo tin Prefinery',         'https://www.prefinery.com/pricing',                  target: '_blank'
-              %li= link_to '1yr starter Algolia',       'http://www.algolia.com/pricing',                     target: '_blank'
+              -@prizes[4].each do |prize|
+                %li= link_to prize.description, prize.link, target: '_blank'
+
 
 
       .row.text-center.title
