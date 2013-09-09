@@ -13,7 +13,7 @@
 - rank: 1
   sponsor: Prefinery
   description: 1yr silver
-  link: https://www.prefinery.com/pricing
+  link: https://www.prefinery.com/visit?r=fhactory&c=lyon
 - rank: 1
   sponsor: Algolia
   description: 1yr pro
@@ -46,7 +46,7 @@
 - rank: 2
   sponsor: Prefinery
   description: 1yr bronze
-  link: https://www.prefinery.com/pricing
+  link: https://www.prefinery.com/visit?r=fhactory&c=lyon
 - rank: 2
   sponsor: Algolia
   description: 1yr premium
@@ -79,7 +79,7 @@
 - rank: 3
   sponsor: Prefinery
   description: 1yr bronze
-  link: https://www.prefinery.com/pricing
+  link: https://www.prefinery.com/visit?r=fhactory&c=lyon
 - rank: 3
   sponsor: Algolia
   description: 1yr premium
@@ -96,7 +96,7 @@
 - rank: 4
   sponsor: Prefinery
   description: 6mo tin
-  link: https://www.prefinery.com/pricing
+  link: https://www.prefinery.com/visit?r=fhactory&c=lyon
 - rank: 4
   sponsor: Algolia
   description: 1yr starter
