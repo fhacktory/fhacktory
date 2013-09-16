@@ -4,7 +4,7 @@
   link: https://www.mailjet.com/pricing
 - rank: 1
   sponsor: Netissime 
-  description: 1 VPS
+  description: 1 VPS or kit server
   link: http://www.netissime.com/serveurs/cloud/
 - rank: 1
   sponsor: Github
@@ -37,7 +37,7 @@
   link: https://www.mailjet.com/pricing
 - rank: 2
   sponsor: Netissime
-  description: 1 VPS
+  description: 1 VPS or kit server
   link: http://www.netissime.com/serveurs/cloud/
 - rank: 2
   sponsor: Github
@@ -70,7 +70,7 @@
   link: https://www.mailjet.com/pricing
 - rank: 3
   sponsor: Netissime
-  description: 1 VPS
+  description: 1 VPS or kit server
   link: http://www.netissime.com/serveurs/cloud/
 - rank: 3
   sponsor: Github
