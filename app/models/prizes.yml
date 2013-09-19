@@ -30,7 +30,11 @@
   sponsor: Amazon
   description: AWS credits
   link: http://aws.amazon.com/fr/
-
+- rank: 1
+  sponsor: GoSquared
+  description: 1yr extreme
+  link: https://www.gosquared.com/plans/
+  
 - rank: 2
   sponsor: Mailjet
   description: 1yr silver
@@ -63,6 +67,10 @@
   sponsor: Amazon
   description: AWS credits
   link: http://aws.amazon.com/fr/
+- rank: 2
+  sponsor: GoSquared
+  description: 1yr pro
+  link: https://www.gosquared.com/plans/
 
 - rank: 3
   sponsor: Mailjet
@@ -88,6 +96,10 @@
   sponsor: La Cordée
   description: 1wk free coworking
   link: http://www.la-cordee.net/offre-tarifs-coworking/
+- rank: 3
+  sponsor: GoSquared
+  description: 1yr plus
+  link: https://www.gosquared.com/plans/
 
 - rank: 4
   sponsor: Mailjet
